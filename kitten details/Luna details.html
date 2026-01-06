@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna - Maine Coon Kitten Details</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+    \<header class="navbar">
+        <div class="logo-area">
+            <div class="logo-icon">😺</div>
+            <span class="site-name">Emily Maine Coons</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../Index.html" class="active">Home</a></li>
+                <li><a href="../Kittens.html">Available Kittens</a></li>
+                <li><a href="../About.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="kitten-details-section">
+        <div class="details-container">
+            
+            <div class="gallery-column">
+                <div class="main-image-wrapper">
+                    <span class="available-status">Available</span>
+                    <img src="../img/Luna/pic1.jpg" alt="Luna pic1 Main Photo" class="main-img">
+                </div>
+                <div class="thumbnail-row">
+                    <img src="../img/Luna/pic 2.jpg" alt="Luna View 2" class="thumb-img">
+                    <img src="../img/Luna/pic3.jpg" alt="Luna View 3" class="thumb-img">
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h1 class="kitten-name">Luna</h1>
+                <p class="breed-type">Silver Mackerel Tabby Maine Coon</p>
+
+                <div class="stats-card">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="label">Age:</span> <span class="value">12 weeks</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Gender:</span> <span class="value">Female</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Weight:</span> <span class="value">3.2 lbs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-section">
+                    <h3>About Luna</h3>
+                    <p>Luna is a stunning silver mackerel tabby Maine Coon with a gentle and playful personality. She loves to cuddle and is great with children. Her striking silver coat and bright green eyes make her a true showstopper.</p>
+                    <div class="personality-badge">Personality: Playful and affectionate</div>
+                </div>
+
+                <div class="health-section">
+                    <h3>Health Information</h3>
+                    <ul class="health-list">
+                        <li>✓ First vaccinations completed</li>
+                        <li>✓ Dewormed</li>
+                        <li>✓ Health certificate provided</li>
+                        <li>✓ FeLV/FIV negative</li>
+                        <li>✓ Vet checked</li>
+                    </ul>
+                </div>
+
+                <button class="whatsapp-inquiry-btn">
+                    <a href="https://wa.me/13802421746" class="inquire-now"><span>💬</span>Quick Inquiry via WhatsApp</a>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!--footer section-->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-col brand-col">
+                <div class="logo-area">
+                    <div class="logo-icon">😺</div>
+                    <span class="site-name">Emily Maine Coons</span>
+                </div>
+
+                <p>Your trusted source for healthy, happy, and well-socialized Maine Coon kittens. We're passionate breeders committed to excellence, ethical practices,and the wellbeing of every kitten.</p>
+
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/profile.php?id=61583728147992" class="social-btn facebook">Facebook</a>
+                    <a href="https://wa.me/13802421746" class="social-btn whatsapp">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../Index.html">Home</a></li>
+                    <li><a href="../Kittens.html">Available Kittens</a></li>
+                    <li><a href="../About.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <a href="https://wa.me/13802421746" class="contact-item">+1 (380) 242-1746</a><br>
+                <a href="mailto:adorablemainecoonkittens201@gmail.com" class="contact-item">adorablemainecoonkittens201@gmail.com</a>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+        <div class="trust-item">🏆<span>Certified Breeders</span></div>
+        <div class="trust-item">💯<span>100% Health Guarantee</span></div>
+        <div class="trust-item">⭐<span>5-Star Reviews</span></div>
+        <div class="trust-item">🤝<span>Lifetime Support</span></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Emily Maine Coons. All rights reserved.</p>
+            <p>Made with ❤️ for Maine Coon lovers.</p>
+        </div>
+
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImg = document.querySelector('.main-img');
+            const thumbs = document.querySelectorAll('.thumb-img');
+            
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    const tempSrc = mainImg.src;
+                    mainImg.src = this.src;
+                    this.src = tempSrc;
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
